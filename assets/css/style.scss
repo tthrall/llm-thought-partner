@@ -1,0 +1,157 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ======================================
+   LLM as Thought-Partner: Custom Styling
+   ====================================== */
+
+/* Typography refinements */
+.main-content {
+  max-width: 48rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Dialogue formatting for transcript */
+.main-content p strong:first-child:only-child {
+  /* Speaker names get special treatment when they're alone in a paragraph */
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1e6b52;
+}
+
+/* Style Sam's and Claude's turns differently */
+.main-content p:has(strong:first-child:only-child) + p {
+  margin-top: 0;
+  padding-left: 1rem;
+  border-left: 3px solid #e8e8e8;
+}
+
+/* Code blocks within dialogue */
+.main-content pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.main-content code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+.main-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Section dividers (horizontal rules) */
+.main-content hr {
+  margin: 3rem auto;
+  width: 30%;
+  border: none;
+  border-top: 2px solid #ddd;
+}
+
+/* Heading adjustments */
+.main-content h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eaecef;
+}
+
+.main-content h3 {
+  margin-top: 2rem;
+  color: #24292e;
+}
+
+/* Blockquotes for emphasis or asides */
+.main-content blockquote {
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  color: #57606a;
+  border-left: 4px solid #1e6b52;
+  background-color: #f8fafb;
+  font-style: normal;
+}
+
+/* Lists within the document */
+.main-content ul, .main-content ol {
+  margin-left: 1.5rem;
+}
+
+.main-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Emphasis on key terms */
+.main-content em {
+  font-style: italic;
+  color: #1e6b52;
+}
+
+/* Strong emphasis within running text */
+.main-content p strong:not(:only-child) {
+  color: #24292e;
+}
+
+/* Header area refinements */
+.page-header {
+  background-color: #1e6b52;
+  background-image: linear-gradient(135deg, #1e6b52, #155d45);
+}
+
+.project-name {
+  font-weight: 600;
+}
+
+.project-tagline {
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+/* Footer refinements */
+.site-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eaecef;
+  color: #6a737d;
+  font-size: 0.9rem;
+}
+
+/* Print styles */
+@media print {
+  .page-header {
+    background: #1e6b52;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .main-content pre {
+    border: 1px solid #ddd;
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 42em) {
+  .main-content {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  .main-content pre {
+    font-size: 0.8rem;
+  }
+}

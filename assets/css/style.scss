@@ -1,10 +1,10 @@
 ---
 ---
-
 @import "{{ site.theme }}";
 
 /* ======================================
    LLM as Thought-Partner: Custom Styling
+   Dark theme adaptation for jekyll-theme-hacker
    ====================================== */
 
 /* Typography refinements */
@@ -23,20 +23,20 @@
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #1e6b52;
+  color: #b5e853;  /* hacker green */
 }
 
 /* Style Sam's and Claude's turns differently */
 .main-content p:has(strong:first-child:only-child) + p {
   margin-top: 0;
   padding-left: 1rem;
-  border-left: 3px solid #e8e8e8;
+  border-left: 3px solid #3d5c3a;  /* muted green */
 }
 
 /* Code blocks within dialogue */
 .main-content pre {
-  background-color: #f6f8fa;
-  border: 1px solid #e1e4e8;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
@@ -45,10 +45,11 @@
 }
 
 .main-content code {
-  background-color: rgba(27, 31, 35, 0.05);
+  background-color: rgba(110, 118, 129, 0.2);
   border-radius: 3px;
   padding: 0.2em 0.4em;
   font-size: 0.9em;
+  color: #e6edf3;
 }
 
 .main-content pre code {
@@ -61,28 +62,29 @@
   margin: 3rem auto;
   width: 30%;
   border: none;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #3d5c3a;
 }
 
 /* Heading adjustments */
 .main-content h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid #30363d;
+  color: #b5e853;
 }
 
 .main-content h3 {
   margin-top: 2rem;
-  color: #24292e;
+  color: #7ee787;  /* lighter green for h3 */
 }
 
 /* Blockquotes for emphasis or asides */
 .main-content blockquote {
   margin: 1.5rem 0;
   padding: 0.75rem 1.25rem;
-  color: #57606a;
-  border-left: 4px solid #1e6b52;
-  background-color: #f8fafb;
+  color: #a5d6a7;  /* soft green-gray */
+  border-left: 4px solid #b5e853;
+  background-color: rgba(61, 92, 58, 0.2);
   font-style: normal;
 }
 
@@ -98,18 +100,18 @@
 /* Emphasis on key terms */
 .main-content em {
   font-style: italic;
-  color: #1e6b52;
+  color: #7ee787;
 }
 
 /* Strong emphasis within running text */
 .main-content p strong:not(:only-child) {
-  color: #24292e;
+  color: #ffffff;
 }
 
 /* Header area refinements */
 .page-header {
-  background-color: #1e6b52;
-  background-image: linear-gradient(135deg, #1e6b52, #155d45);
+  background-color: #238636;
+  background-image: linear-gradient(135deg, #238636, #1a7f37);
 }
 
 .project-name {
@@ -125,21 +127,21 @@
 .site-footer {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #eaecef;
-  color: #6a737d;
+  border-top: 1px solid #30363d;
+  color: #8b949e;
   font-size: 0.9rem;
 }
 
 /* Print styles */
 @media print {
   .page-header {
-    background: #1e6b52;
+    background: #238636;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
   
   .main-content pre {
-    border: 1px solid #ddd;
+    border: 1px solid #30363d;
     page-break-inside: avoid;
   }
 }

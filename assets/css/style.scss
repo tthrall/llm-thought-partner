@@ -8,33 +8,33 @@
    ====================================== */
 
 /* Typography refinements */
-.main-content {
+#main_content {
   max-width: 48rem;
+  margin: 0 auto;
   font-size: 1.05rem;
   line-height: 1.7;
 }
 
 /* Dialogue formatting for transcript */
-.main-content p strong:first-child:only-child {
-  /* Speaker names get special treatment when they're alone in a paragraph */
+#main_content p strong:first-child:only-child {
   display: block;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #b5e853;  /* hacker green */
+  color: #b5e853;
 }
 
 /* Style Sam's and Claude's turns differently */
-.main-content p:has(strong:first-child:only-child) + p {
+#main_content p:has(strong:first-child:only-child) + p {
   margin-top: 0;
   padding-left: 1rem;
-  border-left: 3px solid #3d5c3a;  /* muted green */
+  border-left: 3px solid #3d5c3a;
 }
 
 /* Code blocks within dialogue */
-.main-content pre {
+#main_content pre {
   background-color: #0d1117;
   border: 1px solid #30363d;
   border-radius: 6px;
@@ -44,21 +44,22 @@
   line-height: 1.5;
 }
 
-.main-content code {
-  background-color: rgba(110, 118, 129, 0.2);
+#main_content code {
+  background-color: rgba(110, 118, 129, 0.3);
   border-radius: 3px;
   padding: 0.2em 0.4em;
   font-size: 0.9em;
   color: #e6edf3;
 }
 
-.main-content pre code {
+#main_content pre code {
   background-color: transparent;
   padding: 0;
+  color: #b5e853;
 }
 
 /* Section dividers (horizontal rules) */
-.main-content hr {
+#main_content hr {
   margin: 3rem auto;
   width: 30%;
   border: none;
@@ -66,65 +67,55 @@
 }
 
 /* Heading adjustments */
-.main-content h2 {
+#main_content h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #30363d;
-  color: #b5e853;
 }
 
-.main-content h3 {
+#main_content h3 {
   margin-top: 2rem;
-  color: #7ee787;  /* lighter green for h3 */
+  color: #7ee787;
 }
 
 /* Blockquotes for emphasis or asides */
-.main-content blockquote {
+#main_content blockquote {
   margin: 1.5rem 0;
   padding: 0.75rem 1.25rem;
-  color: #a5d6a7;  /* soft green-gray */
+  color: #a5d6a7;
   border-left: 4px solid #b5e853;
   background-color: rgba(61, 92, 58, 0.2);
   font-style: normal;
 }
 
 /* Lists within the document */
-.main-content ul, .main-content ol {
+#main_content ul, #main_content ol {
   margin-left: 1.5rem;
 }
 
-.main-content li {
+#main_content li {
   margin-bottom: 0.5rem;
 }
 
 /* Emphasis on key terms */
-.main-content em {
+#main_content em {
   font-style: italic;
   color: #7ee787;
 }
 
 /* Strong emphasis within running text */
-.main-content p strong:not(:only-child) {
+#main_content p strong:not(:only-child) {
   color: #ffffff;
 }
 
 /* Header area refinements */
-.page-header {
-  background-color: #238636;
-  background-image: linear-gradient(135deg, #238636, #1a7f37);
-}
-
-.project-name {
-  font-weight: 600;
-}
-
-.project-tagline {
-  opacity: 0.9;
-  font-size: 1.1rem;
+header {
+  background: linear-gradient(135deg, #238636, #1a7f37);
+  border-bottom: 1px dashed #b5e853;
 }
 
 /* Footer refinements */
-.site-footer {
+footer {
   margin-top: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #30363d;
@@ -132,28 +123,14 @@
   font-size: 0.9rem;
 }
 
-/* Print styles */
-@media print {
-  .page-header {
-    background: #238636;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  
-  .main-content pre {
-    border: 1px solid #30363d;
-    page-break-inside: avoid;
-  }
-}
-
 /* Responsive adjustments */
 @media screen and (max-width: 42em) {
-  .main-content {
+  #main_content {
     font-size: 1rem;
     padding: 1rem;
   }
   
-  .main-content pre {
+  #main_content pre {
     font-size: 0.8rem;
   }
 }

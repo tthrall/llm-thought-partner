@@ -2,6 +2,21 @@
 ---
 @import "{{ site.theme }}";
 
+/* Force dark background throughout */
+body {
+  background: #1e1e1e;
+  color: #e2e2e2;
+}
+
+#main_content_wrap {
+  background: #1e1e1e;
+  border-top: none;
+}
+
+.inner {
+  background: transparent;
+}
+
 /* ======================================
    LLM as Thought-Partner: Custom Styling
    Adapted for jekyll-theme-slate

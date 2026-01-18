@@ -4,7 +4,7 @@
 
 /* ======================================
    LLM as Thought-Partner: Custom Styling
-   Dark theme adaptation for jekyll-theme-hacker
+   Adapted for jekyll-theme-slate
    ====================================== */
 
 /* Typography refinements */
@@ -12,95 +12,112 @@
   max-width: 48rem;
   margin: 0 auto;
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.8;
+  color: #e2e2e2;
 }
 
 /* Dialogue formatting for transcript */
 #main_content p strong:first-child:only-child {
   display: block;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   margin-bottom: 0.25rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #b5e853;
+  letter-spacing: 0.08em;
+  color: #6db3f2;
 }
 
 /* Style Sam's and Claude's turns differently */
 #main_content p:has(strong:first-child:only-child) + p {
   margin-top: 0;
   padding-left: 1rem;
-  border-left: 3px solid #3d5c3a;
+  border-left: 3px solid #4a7298;
 }
 
 /* Code blocks within dialogue */
 #main_content pre {
-  background-color: #0d1117;
-  border: 1px solid #30363d;
+  background-color: #1a1a1a;
+  border: 1px solid #3a3a3a;
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   line-height: 1.5;
+  color: #c8e1ff;
 }
 
 #main_content code {
-  background-color: rgba(110, 118, 129, 0.3);
+  background-color: rgba(110, 118, 129, 0.25);
   border-radius: 3px;
   padding: 0.2em 0.4em;
-  font-size: 0.9em;
+  font-size: 0.88em;
   color: #e6edf3;
 }
 
 #main_content pre code {
   background-color: transparent;
   padding: 0;
-  color: #b5e853;
+  color: #c8e1ff;
 }
 
 /* Section dividers (horizontal rules) */
 #main_content hr {
   margin: 3rem auto;
-  width: 30%;
+  width: 40%;
   border: none;
-  border-top: 2px solid #3d5c3a;
+  border-top: 1px solid #4a5568;
 }
 
 /* Heading adjustments */
+#main_content h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
 #main_content h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #30363d;
+  border-bottom: 1px solid #4a5568;
+  color: #6db3f2;
+  font-size: 1.5rem;
 }
 
 #main_content h3 {
   margin-top: 2rem;
-  color: #7ee787;
+  color: #93c5fd;
+  font-size: 1.25rem;
 }
 
 /* Blockquotes for emphasis or asides */
 #main_content blockquote {
   margin: 1.5rem 0;
   padding: 0.75rem 1.25rem;
-  color: #a5d6a7;
-  border-left: 4px solid #b5e853;
-  background-color: rgba(61, 92, 58, 0.2);
+  color: #c9d1d9;
+  border-left: 4px solid #6db3f2;
+  background-color: rgba(74, 114, 152, 0.15);
   font-style: normal;
 }
 
 /* Lists within the document */
 #main_content ul, #main_content ol {
   margin-left: 1.5rem;
+  color: #e2e2e2;
 }
 
 #main_content li {
   margin-bottom: 0.5rem;
 }
 
+/* Bold items in lists (like "What to Watch For" section) */
+#main_content li strong {
+  color: #ffffff;
+}
+
 /* Emphasis on key terms */
 #main_content em {
   font-style: italic;
-  color: #7ee787;
+  color: #93c5fd;
 }
 
 /* Strong emphasis within running text */
@@ -108,19 +125,56 @@
   color: #ffffff;
 }
 
+/* Links */
+#main_content a {
+  color: #6db3f2;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(109, 179, 242, 0.3);
+}
+
+#main_content a:hover {
+  color: #93c5fd;
+  border-bottom-color: rgba(147, 197, 253, 0.5);
+}
+
 /* Header area refinements */
-header {
-  background: linear-gradient(135deg, #238636, #1a7f37);
-  border-bottom: 1px dashed #b5e853;
+#header_wrap {
+  background: linear-gradient(to top, #373737, #4a4a4a);
+}
+
+#header_wrap .inner {
+  padding: 30px 10px 20px 10px;
+}
+
+h1.project_title {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+h2.project_tagline {
+  color: #c9d1d9;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 /* Footer refinements */
-footer {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid #30363d;
+#footer_wrap {
+  background: #2a2a2a;
+}
+
+#footer_wrap .inner {
   color: #8b949e;
   font-size: 0.9rem;
+}
+
+/* Byline styling (author info at top) */
+#main_content > p:first-of-type,
+#main_content > p:nth-of-type(2),
+#main_content > p:nth-of-type(3) {
+  text-align: center;
+  color: #a0aec0;
 }
 
 /* Responsive adjustments */
@@ -132,5 +186,9 @@ footer {
   
   #main_content pre {
     font-size: 0.8rem;
+  }
+  
+  h1.project_title {
+    font-size: 1.5rem;
   }
 }

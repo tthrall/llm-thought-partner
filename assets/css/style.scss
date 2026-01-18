@@ -2,6 +2,11 @@
 ---
 @import "{{ site.theme }}";
 
+/* ======================================
+   LLM as Thought-Partner: Custom Styling
+   Adapted for jekyll-theme-slate
+   ====================================== */
+
 /* Force dark background throughout */
 body {
   background: #1e1e1e;
@@ -16,11 +21,6 @@ body {
 .inner {
   background: transparent;
 }
-
-/* ======================================
-   LLM as Thought-Partner: Custom Styling
-   Adapted for jekyll-theme-slate
-   ====================================== */
 
 /* Typography refinements */
 #main_content {
@@ -51,14 +51,13 @@ body {
 
 /* Code blocks within dialogue */
 #main_content pre {
-  background-color: #1a1a1a;
+  background-color: #272822;
   border: 1px solid #3a3a3a;
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
   font-size: 0.85rem;
   line-height: 1.5;
-  color: #c8e1ff;
 }
 
 #main_content code {
@@ -72,7 +71,6 @@ body {
 #main_content pre code {
   background-color: transparent;
   padding: 0;
-  color: #c8e1ff;
 }
 
 /* Section dividers (horizontal rules) */
@@ -207,3 +205,26 @@ h2.project_tagline {
     font-size: 1.5rem;
   }
 }
+
+/* ======================================
+   Rouge syntax highlighting - Monokai
+   ====================================== */
+.highlight {
+  background: #272822;
+  color: #f8f8f2;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs { color: #75715e; font-style: italic; }
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv { color: #f92672; }
+.highlight .kc, .highlight .kd, .highlight .kt { color: #66d9ef; }
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1, .highlight .sr, .highlight .ss { color: #e6db74; }
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #ae81ff; }
+.highlight .n, .highlight .nv, .highlight .vc, .highlight .vg, .highlight .vi { color: #f8f8f2; }
+.highlight .na { color: #a6e22e; }
+.highlight .nb { color: #f8f8f2; }
+.highlight .nc { color: #a6e22e; }
+.highlight .nf, .highlight .fm { color: #a6e22e; }
+.highlight .no { color: #66d9ef; }
+.highlight .o, .highlight .ow { color: #f92672; }
+.highlight .p { color: #f8f8f2; }
+.highlight .err { color: #f8f8f2; background: transparent; }
+.highlight .w { color: #f8f8f2; }

@@ -2,3 +2,10 @@
 .Rhistory
 .RData
 .Ruserdata
+
+/.quarto/
+*_cache/
+*_files/
+/z_warehouse/
+
+**/*.quarto_ipynb

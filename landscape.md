@@ -12,7 +12,7 @@ title: "LLM-Enhanced Learning: A Thought-Partner Alternative"
 
 **Abstract.** The emergence of LLM-based learning tools presents both opportunities and risks for data science education. Most current tools default to answer-provision, which risks undermining the deep understanding that employers increasingly demand. This paper surveys the landscape, diagnoses the structural incentives behind the answer-provider problem, and proposes a "thought-partner" alternative grounded in five pedagogical principles. An instantiation of this approach—the EDA Companion—is currently in alpha testing.
 
----
+<br>
 
 ## Introduction
 
@@ -106,11 +106,11 @@ This is early-stage work. The Companion represents a proof of concept, not a val
 
 ## Implications
 
-For **educators**, the thought-partner framing offers a path beyond the "ban or allow" debate that has dominated institutional responses to LLMs. The question becomes not whether students use AI tools, but how those interactions are structured. Companion-style tools might supplement office hours and peer collaboration, extending the reach of human instruction without replacing it.
+<strong>Educators.</strong> The thought-partner framing offers a path beyond the "ban or allow" debate that has dominated institutional responses to LLMs. The question becomes not whether students use AI tools, but how those interactions are structured. Companion-style tools might supplement office hours and peer collaboration, extending the reach of human instruction without replacing it.
 
-For **curriculum design**, the implications are significant. Assignments may need redesign to be compatible with thought-partner interaction—emphasizing process documentation and reasoning, not just final products. Learning objectives should specify the understanding students should demonstrate, not just the outputs they should produce. Assessment must evolve to evaluate whether students can reason independently, not just whether they can produce correct answers.
+<strong>Curriculum design.</strong> The implications are significant. Assignments may need redesign to be compatible with thought-partner interaction—emphasizing process documentation and reasoning, not just final products. Learning objectives should specify the understanding students should demonstrate, not just the outputs they should produce. Assessment must evolve to evaluate whether students can reason independently, not just whether they can produce correct answers.
 
-For **workforce development**—a central concern of this year's ADSA Leadership Summit—the thought-partner approach addresses a pressing challenge. Entry-level hiring is declining as routine tasks shift to AI. Graduates must demonstrate value beyond what AI provides. Tools that build genuine capability, rather than dependency, serve both learners and employers.
+<strong>Workforce development.</strong> A central concern of this year's ADSA Leadership Summit, the thought-partner approach addresses a pressing challenge. Entry-level hiring is declining as routine tasks shift to AI. Graduates must demonstrate value beyond what AI provides. Tools that build genuine capability, rather than dependency, serve both learners and employers.
 
 ## Directions for Development
 

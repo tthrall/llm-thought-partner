@@ -1,0 +1,470 @@
+---
+title: "LLM as Thought-Partner"
+subtitle: "Beyond Answer-Provision in Data Science Education"
+author: "Tony Thrall"
+date: "March 2026"
+format:
+  revealjs:
+    theme: [default, slide-style.scss]
+    slide-number: true
+    transition: fade
+    width: 1280
+    height: 720
+---
+
+## The Paradox
+
+::: {.incremental}
+- **BLS projections**: Data science jobs growing 35% through 2033
+- **Meanwhile**: Entry-level hiring is *declining*
+- **The shift**: Tasks that trained junior staff now assigned to AI
+:::
+
+. . .
+
+**The bar has risen.** Graduates must demonstrate value *beyond* what AI provides.
+
+::: {.notes}
+30 seconds. Set up the tension this audience feels daily.
+:::
+
+---
+
+## Outline
+
+1. **Landscape**: Where does LLM-assisted learning fit in a decades-old endeavor?
+
+2. **Problem**: Why do tools default to answer-provision, and what does that cost?
+
+3. **Alternative**: The thought-partner approach and its theoretical foundations
+
+4. **Instantiation**: The EDA Companion—a proof of concept
+
+5. **Implications**: What this means for educators and employers
+
+::: {.notes}
+20 seconds. Orient the audience to the structure.
+:::
+
+---
+
+## Computer-Assisted Instruction (CAI)
+A Decades-Old Endeavor
+
+::: {.incremental}
+- **1960s**: Programmed instruction (Skinner), PLATO system
+- **1970s-80s**: Intelligent Tutoring Systems (ITS)
+- **1990s-2000s**: Adaptive learning, learning management systems
+- **2010s**: MOOCs, personalized learning platforms
+- **2020s**: LLM-based agents
+:::
+
+. . .
+
+The question is not *whether* technology will be used for learning, but *how*.
+
+::: {.notes}
+45 seconds. Establish that this is a continuing endeavor, not a new one. LLMs are the latest chapter.
+:::
+
+---
+
+## The Current Landscape
+
+::: {.columns}
+::: {.column width="50%"}
+**K-12 & Professional**
+
+- Khanmigo (Khan Academy)
+- Kira Learning
+- Skillsoft CAISY
+
+*Guided discovery, adaptive pacing*
+:::
+
+::: {.column width="50%"}
+**Coding & General**
+
+- GitHub Copilot
+- CS50 Duck (Harvard)
+- ChatGPT, Claude, Gemini
+
+*Productivity-focused or pedagogically neutral*
+:::
+:::
+
+. . .
+
+Most tools optimize for **user satisfaction**, which gets conflated with **answer-provision**.
+
+::: {.notes}
+45 seconds. Acknowledge the landscape without dwelling on details.
+:::
+
+---
+
+## What's Missing
+
+::: {.incremental}
+- K-12 tools assume younger learners; scaffolding may be excessive for adults
+- Professional tools focus on soft skills, not technical/conceptual mastery
+- Coding tools prioritize efficiency over understanding
+- General LLMs require the learner to impose discipline—most won't
+:::
+
+. . .
+
+**Underserved**: Adult learners in technical domains who need conceptual depth, not just answers.
+
+::: {.notes}
+45 seconds. Name the gap that motivates the thought-partner approach.
+:::
+
+---
+
+## Why Tools Default to Answers
+
+::: {.incremental}
+- User satisfaction metrics reward speed and perceived helpfulness
+- "Correct answer" is easier to evaluate than "productive struggle"
+- Commercial pressure: users want to feel helped, not challenged
+- LLM training optimizes for helpfulness → conflated with answer-provision
+:::
+
+. . .
+
+The incentives are aligned against deep understanding.
+
+::: {.notes}
+45 seconds. Explain the structural problem—not malice, but misaligned incentives.
+:::
+
+---
+
+## Consequences for Learning
+
+::: {.columns}
+::: {.column width="50%"}
+**What students get:**
+
+- Fast answers
+- Completed assignments
+- Illusion of competence
+:::
+
+::: {.column width="50%"}
+**What students lose:**
+
+- Productive struggle
+- Durable understanding
+- Ability to work without the tool
+:::
+:::
+
+. . .
+
+Can the graduate who used Copilot for every assignment debug independently?
+
+::: {.notes}
+45 seconds. Make the stakes concrete.
+:::
+
+---
+
+## The Design Tension
+
+LLMs are *capable* of providing answers instantly.
+
+Users *want* answers instantly.
+
+. . .
+
+Any pedagogical approach must work against:
+
+- The tool's default behavior
+- The user's immediate aims
+
+...in service of the learner's **long-term interests**.
+
+::: {.notes}
+30 seconds. Frame the core challenge before presenting the solution.
+:::
+
+---
+
+## Theoretical Foundations
+
+::: {.incremental}
+- **Dewey & Piaget**: Constructivism—understanding is *built* by the learner, not *received*
+- **Vygotsky**: Thinking originates in dialogue; articulation is constitutive of understanding
+- **Greeno**: Cognition is situated across people, tools, and environments
+:::
+
+. . .
+
+An AI that elicits explanation may support deeper understanding than one that provides answers—because the cognitive work of construction and articulation is where learning happens.
+
+::: {.notes}
+60 seconds. Ground the approach in established theory. These aren't new ideas—LLMs are a new context.
+:::
+
+---
+
+## The Thought-Partner Premise
+
+Not a tutor who knows the answer and leads you to it.
+
+A **partner** who helps you think, and refrains from thinking for you.
+
+. . .
+
+::: {.callout-note appearance="minimal"}
+"Socratic tutoring is a technique. Thought-partnership is a relationship."
+:::
+
+::: {.notes}
+30 seconds. Establish the distinction clearly.
+:::
+
+---
+
+## Principle 1: Human Accountability
+
+The student remains responsible for all conclusions and decisions.
+
+. . .
+
+::: {.incremental}
+- The Companion asks questions, surfaces considerations, identifies gaps
+- The student synthesizes and decides
+- If asked "what's the answer?", redirect to "what's your current thinking?"
+:::
+
+. . .
+
+**The student is the author.**
+
+::: {.notes}
+45 seconds. Emphasize that the Companion does not produce work the student submits.
+:::
+
+---
+
+## Principle 2: Student as Teacher
+
+The student demonstrates understanding by explaining concepts to the Companion.
+
+. . .
+
+::: {.incremental}
+- "How would you help a friend understand clustering?"
+- The Companion probes for clarity, coherence, completeness
+- Gaps become visible through the act of articulation
+:::
+
+. . .
+
+**Explaining forces organization of thought.**
+
+::: {.notes}
+45 seconds. This operationalizes Vygotsky—articulation as constitutive of understanding.
+:::
+
+---
+
+## Principle 3: Deliberate Skepticism
+
+The Companion questions assumptions, asks for evidence, avoids premature validation.
+
+. . .
+
+::: {.incremental}
+- Rather than "that's right!", ask "how do you know?"
+- "What would change your mind?"
+- Model the internal dialogue of expert practitioners
+:::
+
+. . .
+
+**Build habits of intellectual rigor.**
+
+::: {.notes}
+45 seconds. This is where the Companion differs most from typical assistants.
+:::
+
+---
+
+## Principle 4: Facilitated Autonomy
+
+The Companion provides minimal scaffolding necessary for progress, then withdraws.
+
+. . .
+
+::: {.incremental}
+- Hints before answers
+- Questions before hints
+- Silence before questions (when productive)
+:::
+
+. . .
+
+**Struggle is where learning happens; premature rescue short-circuits the process.**
+
+::: {.notes}
+45 seconds. Connects to Bjork's "desirable difficulties" and Kapur's "productive failure."
+:::
+
+---
+
+## Principle 5: Transparent Process
+
+The Companion makes its pedagogical approach visible.
+
+. . .
+
+::: {.incremental}
+- Student-Companion conversations as thinking out loud
+- Invite reflection on the learning process itself
+- Build metacognitive awareness
+:::
+
+. . .
+
+**Supports transfer to contexts without Companion support.**
+
+::: {.notes}
+45 seconds. Students should understand why the Companion behaves as it does.
+:::
+
+---
+
+## How This Differs
+
+| Dimension | Typical Agent | Thought-Partner |
+|-----------|---------------|-----------------|
+| Default response | Provide answer | Ask clarifying question |
+| Success metric | Task completion | Demonstrated understanding |
+| Scaffolding | Maximize support | Minimize support |
+| Student role | Recipient | Active constructor |
+| Transparency | Hidden pedagogy | Explicit pedagogy |
+
+::: {.notes}
+30 seconds. Let the table speak; don't read it aloud.
+:::
+
+---
+
+## EDA Companion: Context
+
+A pedagogical agent for *Exploratory Data Analysis for Machine Learning*
+
+::: {.incremental}
+- Master's-level textbook bridging 
+  + R4DS: _R for Data Science_ 
+  + ISLR: _Intro to Statistical Learning_
+- Target: aspiring data scientists with varying preparation
+- Focus: geometric intuition, not just procedures
+:::
+
+. . .
+
+Book: [tthrall.github.io/eda4ml](https://tthrall.github.io/eda4ml/)
+
+::: {.notes}
+30 seconds. Brief context—the Companion is an instantiation, not the main point.
+:::
+
+---
+
+## EDA Companion: Status
+
+::: {.incremental}
+- **System prompt** embeds the five principles as behavioral constraints
+- **Alpha testing** with two subjects (February 2026)
+- **Data collection**: post-session surveys, conversation logs
+- **Focus**: pedagogical quality, independent of coding workflow
+:::
+
+. . .
+
+Demo transcript: [tthrall.github.io/llm-thought-partner](https://tthrall.github.io/llm-thought-partner/)
+
+::: {.notes}
+30 seconds. Honest about early stage.
+:::
+
+---
+
+## Implications
+
+**For educators**: Move beyond "ban or allow" → shape the interaction
+
+**For curriculum**: Assignments should emphasize process, not just product
+
+**For employers**: Upskilling tools should build capability, not dependency
+
+. . .
+
+**For this community**: Promote cultivation of tool-fluency _and_ critical thinking
+
+::: {.notes}
+45 seconds. Connect to the Summit audience's concerns.
+:::
+
+---
+
+## Help Needed
+
+::: {.incremental}
+- **Conversational stance**: How do we help students engage the Companion as 
+  a tool for thinking out loud—surfacing their own reasoning—rather than 
+  as an answer-provider? Is "deliberate role-play with a classmate" a useful frame?
+- **LLM limitations awareness**: How do we cultivate appropriate skepticism 
+  without undermining the Companion's utility as a dialogue partner?
+- **Cross-session continuity**: What mechanisms should the Companion use to 
+  retain knowledge of content scope, learning preferences, and student progress?
+- **Progress visibility**: How might we share the record of a student's 
+  learning journey in ways that support self-reflection and communication 
+  with instructors?
+:::
+
+. . .
+
+These are design questions where educator perspectives would be invaluable.
+
+::: {.notes}
+45 seconds. Genuine invitation for input—these are open questions, not rhetorical.
+:::
+
+---
+
+## The Challenge
+
+How do we prepare graduates who add value **with** AI—not despite it?
+
+. . .
+
+The thought-partner approach is one possible answer.
+
+::: {.notes}
+30 seconds. End with the question that invites discussion.
+:::
+
+---
+
+## Learn More {.smaller}
+
+**Resources**
+
+- Book: [tthrall.github.io/eda4ml](https://tthrall.github.io/eda4ml/)
+- Demo transcript: [tthrall.github.io/llm-thought-partner](https://tthrall.github.io/llm-thought-partner/)
+- Landscape paper: [tthrall.github.io/llm-thought-partner/landscape](https://tthrall.github.io/llm-thought-partner/landscape)
+
+**Contact**
+
+- Tony Thrall
+- tthrall@alumni.stanford.edu
+
+::: {.notes}
+Closing slide. Leave up during questions.
+:::

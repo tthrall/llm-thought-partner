@@ -458,7 +458,7 @@ The thought-partner approach is one possible answer.
 
 - Book: [tthrall.github.io/eda4ml](https://tthrall.github.io/eda4ml/)
 - Demo transcript: [tthrall.github.io/llm-thought-partner](https://tthrall.github.io/llm-thought-partner/)
-- Landscape paper: [tthrall.github.io/llm-thought-partner/landscape](https://tthrall.github.io/llm-thought-partner/landscape)
+- Today's talk: [tthrall.github.io/llm-thought-partner/landscape](https://tthrall.github.io/llm-thought-partner/landscape)
 
 **Contact**
 

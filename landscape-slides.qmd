@@ -38,7 +38,7 @@ format:
 
 3. **Alternative**: The thought-partner approach and its theoretical foundations
 
-4. **Instantiation**: The EDA Companion—a proof of concept
+4. **Example**: The EDA Companion—a proof of concept
 
 5. **Implications**: What this means for educators and employers
 
@@ -272,7 +272,7 @@ The student demonstrates understanding by explaining concepts to the Companion.
 
 ---
 
-## Principle 3: Deliberate Skepticism
+## Principle 3: Cultivate Skepticism
 
 The Companion questions assumptions, asks for evidence, avoids premature validation.
 
@@ -294,7 +294,7 @@ The Companion questions assumptions, asks for evidence, avoids premature validat
 
 ---
 
-## Principle 4: Facilitated Autonomy
+## Principle 4: Facilitate Autonomy
 
 The Companion provides minimal scaffolding necessary for progress, then withdraws.
 
@@ -354,7 +354,7 @@ The Companion makes its pedagogical approach visible.
 
 ---
 
-## EDA Companion: Context
+## Example: The EDA Companion
 
 A pedagogical agent for *Exploratory Data Analysis for Machine Learning*
 

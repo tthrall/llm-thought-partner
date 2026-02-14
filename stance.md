@@ -38,6 +38,8 @@ This *stance* toward the interaction appears to be load-bearing. A student who a
 
 I have been calling this the "pixie dust" in the interaction. Sam's qualities and Claude's capabilities both matter, but something else is happening: a mode of engagement that neither party brings alone.
 
+I initially described this as "treating the LLM as a thought-partner rather than an answer-provider." I still find that framing useful, but it is incomplete, and in one respect misleading. A closer reading of the transcript suggests a more precise characterization, which I develop below.
+
 ## Four Factors
 
 What produces this thought-partner stance? I see at least four factors that may contribute, and I offer them here as conversation-starters rather than as competing alternatives or testable hypotheses. Some may prove more important than others; there may be additional factors I have not considered; and better representations of these four may exist in literatures I do not know.
@@ -57,6 +59,22 @@ Text maps onto familiar channels (email, messaging) where people already engage 
 This possibility has precedent in computer-mediated communication research. Media richness theory (Daft & Lengel, 1986) initially suggested that leaner channels would be inferior for complex tasks, but subsequent work complicated that picture. Reduced social cues can increase task focus and lower evaluation apprehension. I am uncertain whether this literature addresses the specific case of intellectual collaboration with AI.
 
 If this factor proves important, it would run counter to the common assumption that richer interfaces are better. It would suggest that, for certain cognitive tasks, leaner channels may outperform multimedia and embodied agents.
+
+## A Closer Reading
+
+Re-reading the transcript with fresh eyes, I notice something I initially glossed over: the Companion provides answers throughout the session. It confirms Sam's reasoning about the covariance matrix. It names the distinction between continuous and categorical variables. It supplies the `tidyr::drop_na()` function. It tells Sam that a wind speed of 1048 mph would be "not weather." These are answers.
+
+What the Companion does not do is provide answers *before Sam has done the cognitive work to receive them*. When Sam identifies the eigenvalue structure of PCA, the Companion confirms. When Sam spots the circularity problem with wind direction, the Companion validates. When Sam struggles with `complete.cases()` inside `filter()`, the Companion waits, then offers the cleaner alternative only after Sam has arrived at a working solution. Each answer lands on ground the learner has prepared.
+
+This suggests a reframing. The pedagogical art is not answer-withholding; it is answer-sequencing. The design question is not "how to prevent Claude from giving answers" but "how to ensure the student has done enough cognitive work to have a place to put each answer."
+
+This reframing also changes how I think about productive struggle. The literature on desirable difficulties (Bjork, 2011) and productive failure (Kapur, 2014) can read as if struggle were intrinsically virtuous. But struggle is an investment, and like any investment, it has diminishing marginal returns. The optimal amount depends on the learner's goals, available cognitive resources, and opportunity costs.
+
+An analogy from a different domain may clarify. The Interagency Language Roundtable (ILR) scale rates language proficiency from 0 (no competence) to 5 (native equivalent). A diplomat posted abroad benefits enormously from reaching Level 2 (limited working proficiency) in the host language. The marginal return on pushing to Level 4 (full professional proficiency) is real but steep, while the opportunity cost of the additional years of study may be prohibitive. The optimal investment depends on the diplomat's role, posting duration, and what else competes for their time.
+
+The same logic applies to productive struggle in learning. A data science student working through PCA needs enough struggle to build genuine understanding of what eigenvectors represent and why scaling matters. But "enough" is not "maximum." It depends on whether PCA is central to the student's goals or peripheral, on what other material competes for their attention, and on how much foundational preparation they bring. The thought-partner's job is to calibrate: enough struggle that each answer has a place to land, not so much that the learner exhausts cognitive resources before reaching the payoff.
+
+This is not a settled conclusion. It is, at best, a more precise version of the question I started with.
 
 ## Why This Might Matter
 
@@ -79,7 +97,7 @@ This is a single case study with an idealized learner. I am aware that Sam's suc
 In preparing this reflection, I encountered terms that may connect to what I'm describing, though I am uncertain of the fit:
 
 - **Epistemic agency** — the learner's sense of ownership over knowledge construction
-- **Productive struggle** — the value of difficulty that is neither trivial nor overwhelming (Kapur, 2014)
+- **Productive struggle** — the value of difficulty that is neither trivial nor overwhelming (Kapur, 2014). As discussed above, I now think productive struggle is better understood as an investment with diminishing marginal returns than as an intrinsic good. The optimal level depends on the learner's goals, available cognitive resources, and what else competes for their attention.
 - **Learner autonomy** — self-directed engagement with material
 - **Zone of proximal development** — the space where scaffolding enables learning that would otherwise be out of reach (Vygotsky, 1978)
 - **Social presence** — the degree to which a medium conveys the "realness" of an interlocutor (Short et al., 1976)
@@ -103,6 +121,8 @@ If you have thoughts, corrections, or suggestions, I would be glad to hear them.
 The AI companion in the transcript was Claude, developed by Anthropic. The framing of factors in this reflection emerged through conversation with Claude as well. I am grateful to colleagues at the ADSA Leadership Summit for the opportunity to explore these ideas, and to those who may respond to this invitation.
 
 ## References
+
+Bjork, R. A., & Bjork, E. L. (2011). Making things hard on yourself, but in a good way: Creating desirable difficulties to enhance learning. In M. A. Gernsbacher, R. W. Pew, L. M. Hough, & J. R. Pomerantz (Eds.), *Psychology and the real world: Essays illustrating fundamental contributions to society* (pp. 56–64). Worth Publishers.
 
 Collins, A., & Stevens, A. L. (1982). Goals and strategies of inquiry teachers. In R. Glaser (Ed.), *Advances in instructional psychology* (Vol. 2, pp. 65–119). Lawrence Erlbaum Associates.
 

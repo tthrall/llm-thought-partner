@@ -24,7 +24,7 @@ I find this moment striking because it represents exactly the kind of deep learn
 
 I am preparing to co-chair a panel on "Student Readiness and Workforce Development in this Era of AI" at the Data Science Leadership Summit in March 2026, organized by the Alliance for Data Science and AI ([ADSA](https://alliance4datascience.ai/)). As part of that preparation, I conducted a role-playing exercise to explore whether an LLM could serve as a Socratic tutor. I played Sam, a mathematics graduate learning data science. Claude, Anthropic's AI assistant, played the Companion.
 
-The transcript of that session is available at: [tthrall.github.io/llm-thought-partner](https://tthrall.github.io/llm-thought-partner)
+The transcript of that session is available at: [tthrall.github.io/llm-thought-partner/transcript](https://tthrall.github.io/llm-thought-partner/transcript)
 
 Sam is an idealized learner: mathematically mature, curious, persistent, honest about confusion. The session succeeded beyond my expectations. Sam (that is, I) learned something genuine about PCA. The Companion asked good questions at good moments. Errors became opportunities. The workplace-framing that Sam requested at the start was honored throughout.
 

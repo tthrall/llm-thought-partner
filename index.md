@@ -7,7 +7,7 @@ title: LLM as Thought-Partner
 
 This site presents a set of working documents exploring the use of large language models as thought-partners in education. The central question: can an LLM be configured to deepen a student's understanding rather than replace their thinking?
 
-The documents below approach this question from three angles: a demonstration, an analytical reflection, and a survey of the broader landscape.
+The first three documents below approach this question from three angles: a demonstration, an analytical reflection, and a survey of the broader landscape. The fourth turns from students to colleagues: what ten months of working with an AI as a thought-partner suggest.
 
 ---
 
@@ -22,6 +22,9 @@ A case study examining a specific moment in the transcript, in which the student
 **[LLM-Enhanced Learning: A Thought-Partner Alternative](landscape)**  
 A survey of the current landscape of LLM-based learning tools, diagnosing the structural incentives behind the default toward answer-provision. The paper proposes five pedagogical principles for a thought-partner alternative and describes an instantiation currently in alpha testing.
 
+**[Working With an AI Thought-Partner: What Ten Months Suggest](practice)**  
+An account of ten months of working with Claude as a thought-partner on a textbook, an AI tutor, and a multi-institution working group. It offers observations as hypotheses rather than conclusions, two worked examples, and a conjecture that AI might lower the social cost of exposing confusion within interdisciplinary teams.
+
 ---
 
 ## Suggested Reading Order
@@ -31,6 +34,8 @@ The documents are self-contained, but readers coming to this work for the first 
 1. **Transcript** first, to see the interaction in action.
 2. **Stance article** next, for analysis of what the transcript reveals about pedagogy.
 3. **Landscape paper** last, for the broader context and design principles.
+
+Readers interested in working with an AI as a colleague rather than a tutor may begin with **Working With an AI Thought-Partner**.
 
 ---
 
